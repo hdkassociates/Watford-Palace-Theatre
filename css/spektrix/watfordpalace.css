@@ -100,7 +100,7 @@ img.SeatSelectable:hover{
 } removed so that colors can be controlled from Spektrix */
 
 img.SeatSelectable:hover{
-    filter: brightness(120%);
+    opacity: 0.7;
 }
 
 .ErrorMessage {
@@ -783,3 +783,11 @@ a.Selected {
         padding: 10px;
     }
 }
+
+/* Adding underline for credit a tag */
+
+.spx-label-field__checkout--credit  {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
