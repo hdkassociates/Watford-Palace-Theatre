@@ -1,0 +1,785 @@
+html{
+	font-size:16px; /* basis for all rem sizes */
+}
+
+.SpektrixPage, body {
+  margin: 0 auto;
+  font-family:"acumin-pro",Arial,sans-serif;
+  font-size:100%;
+  font-weight:400;
+  line-height:1;
+  padding:50px 0.875rem;
+}
+
+h1,h2,h3,h4{
+  font-family:'Oswald',Arial,sans-serif;
+  font-weight:500;
+  text-transform:uppercase;
+  line-height:1.2;
+  text-align:center;
+  color: #D50057;
+}
+
+h1{
+  font-size:2.5rem
+  }
+
+  
+h3 {
+    margin: 0 0 10px;
+    color:#002D5C;
+    margin:0.875rem
+}
+
+p{
+  text-align:center;
+  font-size:1rem;
+}
+
+.EventDetails {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+a {
+    text-decoration: none;
+    color: #D50057;
+}
+
+.SeatingArea .PlanControls {
+    background-image: none;
+    background-color: #d50057;
+}
+
+img.Seat {
+    opacity:0.4 
+}
+
+
+
+.Button, .spx-button-primary, .spx-button-secondary, .spx-button-tertiary  {
+    background: none;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: .5em;
+    border: 1px solid #D50057;
+    color: #D50057;
+    margin: 0 15px;
+    cursor: pointer;
+    font-family: 'Oswald',Arial,sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1.2;
+}
+
+.spx-button-tertiary{
+	margin-top:10px;
+}
+
+.spx-button-primary, .spx-button-secondary{
+	display:block;
+	margin:1.75rem auto;
+}
+
+.Buttons{
+    display: flex;
+    width: 100%;
+    justify-content:center
+}
+
+/* img.SeatSelectable, .ImageIcon {
+    filter: hue-rotate(78deg) saturate(1.2);
+} 
+
+img.SeatSelectable:hover{
+    filter: hue-rotate(78deg) saturate(1.2) brightness(120%) ;
+}
+
+ .SeatingAreaBackground {
+    filter: hue-rotate(290deg) saturate(1.2);
+} removed so that colors can be controlled from Spektrix */
+
+img.SeatSelectable:hover{
+    filter: brightness(120%);
+}
+
+.ErrorMessage {
+    color: #a90a0a;
+    border: 2px solid #a90a0a;
+    padding: 0.875rem;
+}
+
+.PricesContainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+	margin-top: 25px;
+}
+
+h3.PricesHeading {
+    flex-basis: 100%;
+}
+
+td,th {
+    padding: 5px;
+}
+
+select {
+    padding: 5px;
+    font-size: 1rem;
+    border: 1px solid #DDD;
+}
+
+.Details table {
+    margin: 0 auto;
+}
+
+.Items .Header {
+    display: none;
+}
+
+.Savings {
+    padding: 1.75rem;
+	border: 1px solid #D50057;
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.PromoCode {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.PromoCode input {
+    height: 100%;
+    display: inline-block;
+    font-size: 1rem;
+    padding: 8px;
+    border: 1px solid #D50057;
+    color: #D50057;
+    margin: 0 15px;
+    cursor: pointer
+}
+
+.Items dt.Item {
+    font-size: 1.2rem;
+    padding: 0.875rem;
+    box-sizing:content-box;
+}
+
+.Items .Item, .Items .Promo, .Items .Footer {
+    background-color: #002D5C;
+    color: #fff;
+    text-align: center;
+    flex-basis: 40%;
+    padding: 0;
+    margin: 10px 0 35px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1;
+}
+
+.Items {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.Items p.Details {
+    font-size: 0.875rem;
+    flex-basis: 100%;
+    line-height: 1.2rem;
+}
+
+.Items dd.Item {
+    padding: 0.875rem;
+}
+
+.Items p.ViewDetails {
+    flex-basis: 100%;
+    margin: 0;
+}
+
+.prototip {
+    font-family:"acumin-pro",Arial,sans-serif !important;
+    font-size:100%;
+	transform:translate(-100px,0);
+}
+
+
+.Items p.ViewDetails a {
+    color: #FFC700;
+    font-family: 'Oswald',Arial,sans-serif;
+}
+
+.Items .Item .Buttons input, .Buttons .CheckoutLink  {
+    background-color: #FFC700;
+    color:#000;
+    font-family: 'Oswald',Arial,sans-serif;
+    border-color: #FFC700;
+    width:100px
+}
+
+li {
+    list-style: none;
+    padding: 5px;
+}
+
+ul {
+    padding: 0;
+}
+
+.Items .Promo{
+    background-color:#00A2AE;
+    min-height: 200px;
+    color: #FFF;
+}
+.Items dt.Promo{
+    padding:0 30px;
+	font-size:1.2rem;
+}
+
+.Items .Promo a{
+    
+    color: #FFC700;
+    font-family: 'Oswald',Arial,sans-serif;
+    font-size:1.2rem
+}
+
+.Items .Footer{
+    background-color: #D50057;
+    font-size:1rem
+}
+
+.Buttons .CheckoutLink {
+	color: #000;
+   min-width: 200px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   line-height: 1rem;
+   font-size: 1.2rem;
+   padding: 20px 0;
+   text-transform: uppercase;
+   font-weight: 500;
+}
+
+
+.GrandTotal .Label {
+    display:none;
+}
+
+.spx-field-container {
+    text-align: left;
+}
+
+
+section.spx-section-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    /* padding: 1.7rem; */
+    margin-bottom: 1.7rem;
+}
+
+.spx-heading-headline {
+    flex-basis: 100%;
+}
+
+a.spx-link-edit {
+    display: block;
+    border:1px solid #D50057;
+    padding: .6em 1.2em;
+    margin: 0 .5rem .5rem .5rem;
+    box-sizing:border-box;
+    margin-bottom:1rem;
+    background:transparent;
+    border-color:#D50057;
+    color:#D50057;
+    font-family: 'Oswald',Arial,sans-serif;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 1.2;
+    font-size: .6875rem;
+    cursor:pointer;
+}
+
+.spx-subsection-container {
+    flex-basis: 100%;
+	text-align: center;
+}
+
+.spx-text-copy {
+    display: block;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.spx-data-first-name, .spx-data-last-name {
+    display: inline-block;
+}
+
+/*.spx-field-container__checkout--order-summary .spx-input-checkbox {
+    display: inline-block;
+}*/
+
+.spx-subsection-summary-container {
+    text-align: center;
+    /* font-size: .875rem; */
+}
+
+.spx-text-copy__checkout--donations {
+    flex-basis: 100%;
+}
+
+.spx-field-container.spx-field-container__checkout.spx-field-container__checkout--donation span {
+    display: inline-block;
+}
+
+label.spx-label-field.spx-label-field__checkout.spx-label-field__checkout--donation {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.spx-button-tertiary, .spx-input-text {
+    margin: 10px 0 0;
+    display: inline-block;
+    padding: 10px;
+    height: 50px;
+    min-width: 50px;
+    font-size: 1rem;
+    background: transparent;
+    color: #D50057;
+    border: 1px solid #D50057;
+    cursor: pointer;
+}
+
+.spx-input-text {
+	box-sizing: border-box;
+    width: 60%;
+}
+
+label.spx-label-field.spx-label-field__checkout.spx-label-field__checkout--personal-details {
+    display: inline-block;
+    width: 30%;
+}
+
+.spx-fieldset-container {
+    border: 1px solid #D50057;
+}
+
+.spx-input-text.spx-input-text__checkout--donation {
+    width: 20%;
+    display: inline-block;
+    font-size: 1.35rem;
+    line-height: 1.3rem;
+}
+
+
+.spx-radio-button, .spx-input-checkbox {
+    display:none;
+}
+
+.spx-field-container__checkout--gift-aid {
+    text-align: left;
+    padding: 5px;
+    max-width: 57%;
+    margin: 0 .875rem;
+    line-height: 1.1rem;
+}
+.spx-label-field__checkout--contact-preferences,
+.spx-label-field__checkout--gift-aid {
+    position: relative;
+    padding-left: 7px;
+    display: inline-block;
+}
+
+label.spx-label-field__checkout--gift-aid::before, .spx-label-field__checkout--contact-preferences::before,
+label.spx-label-field.spx-label-field__checkout.spx-label-field__checkout--order-summary::before{
+    content: '';
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    background: #000;
+    left: -18px;
+    top: 6px;
+}
+
+label.spx-label-field.spx-label-field__checkout.spx-label-field__checkout--order-summary {
+    display: inline-block;
+    position: relative;
+}
+
+.spx-field-container.spx-field-container__checkout.spx-field-container__checkout--credit {
+    text-align: center;
+}
+
+label.spx-label-field.spx-label-field__checkout.spx-label-field__checkout--gift-aid::after, .spx-label-field__checkout--contact-preferences::after,
+label.spx-label-field.spx-label-field__checkout.spx-label-field__checkout--order-summary::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    background: #fff;
+    left: -16px;
+    top: 8px;
+    transition:background-color 200ms ease;
+}
+
+input[type=radio]:checked ~ label.spx-label-field__checkout--gift-aid::after,
+input[type=checkbox]:checked ~ label.spx-label-field__checkout--contact-preferences::after,
+input[type=checkbox]:checked ~ label.spx-label-field.spx-label-field__checkout.spx-label-field__checkout--order-summary::after
+{
+    background-color:#D50057;
+    outline:1px solid #fff
+}
+
+ul.spx-unordered-list.spx-unordered-list__checkout.spx-unordered-list__checkout--gift-aid-info {
+    text-align: center;
+}
+
+ul.spx-list-contact-preferences li .spx-text-copy {
+    display: inline-block;
+}
+
+ul.spx-list-contact-preference-groups {
+    flex-basis: 100%;
+}
+
+ul.spx-list-contact-preferences {
+    text-align: center;
+}
+
+.spx-data-event-name {
+    font-weight: 700;
+}
+
+a.spx-link-edit.spx-link-edit__checkout.spx-link-edit__checkout--order-summary {
+    display: inline-block;
+}
+
+ul.spx-list-contact-preferences li .spx-text-copy, .spx-subsection-summary-container .spx-text-copy, .spx-subsection-container__checkout--credit .spx-text-copy {
+    display: inline-block;
+}
+
+ul.spx-list-contact-preference-groups {
+    flex-basis: 100%;
+}
+
+ul.spx-list-contact-preferences {
+    text-align: center;
+}
+
+.spx-data-event-name {
+    font-weight: 700;
+}
+
+a.spx-link-edit.spx-link-edit__checkout.spx-link-edit__checkout--order-summary  {
+    display: inline-block;
+}
+
+
+.spx-subsection-container__checkout--credit form {
+    margin-bottom: .875rem;
+}
+
+.spx-wikitext-container {
+    line-height: 120%;
+}
+
+a.spx-link-edit.spx-link-edit__checkout.spx-link-edit__checkout--address-preview {
+    max-width: 70px;
+    margin: 0 auto;
+}
+
+.spx-subsection-summary-container__checkout--address-preview {
+    margin-top: .875rem;
+}
+
+.fox .ErrorMessage {
+    padding: 0;
+    border: 0;
+}
+
+.fox .Container {
+    padding: 5px;
+}
+
+.fox input {
+    font-size: 1rem;
+}
+
+label.left {
+    display: inline-block;
+    width: 30%;
+}
+
+.spx-validation-errorlist.spx-validation-errorlist__checkout.spx-validation-errorlist__checkout--final-summary {
+    background-color: #9a1515;
+}
+
+.spx-validation-errorlist.spx-validation-errorlist__checkout.spx-validation-errorlist__checkout--final-summary a {
+    color: #fff;
+}
+
+label.spx-label-field.spx-label-field__checkout.spx-label-field__checkout--new-address{
+    display: inline-block;
+    width: 30%;
+}
+
+.spx-input-dropdown.spx-input-dropdown__checkout {
+    padding: 12px;
+    margin: 0 0 0 -7px;
+    width: 60%;
+    box-sizing: border-box;
+}
+
+.spx-field-container.spx-field-container__checkout.spx-field-container__checkout--new-address {
+    margin: 10px 0;
+}
+
+td.TableDataTitle {
+    width: 30%;
+}
+
+td.TableDataContent {
+    width: 60%;
+    text-align: left;
+}
+
+
+tr.BestAvailableSeatingAreaRow td, table.BestAvailablePriceBandTable td {
+    padding: 10px 0;
+}
+
+table.BestSeatsTable, table.BestAvailablePriceBandTable {
+    border-spacing: 0;
+}
+
+td.TableDataTitle {
+    font-weight: 500;
+}
+
+.BestAvailableSeatingAreaSelectAll, .BestAvailablePriceBandSelectAll {
+    font-weight: 600;
+    color: #D50057;
+}
+
+.SeatingArea.Unreserved{
+    margin:0 auto;
+    max-width:70%
+}
+.SeatingArea.Unreserved label, .SeatingArea.Unreserved span, .SeatingArea.Unreserved input {
+    display: inline-block;
+    width: 30%;
+    margin: 10px 0;
+}
+
+.SeatingArea.Unreserved input {
+    font-size:0.875rem;
+    padding:5px;
+    border:1px solid #D50057
+}
+
+.SeatingSelector, .Savings {
+    margin-bottom: 10px;
+}
+.LoginForm {
+    margin-bottom: 10px;
+}
+
+label.right {
+    font-size: 50%;
+    display: inline-block;
+    margin-left: 5px;
+}
+.LoginForm input, .ChangePassword input{
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.NewAccount .View input, .DetailsEditor input {
+    width: 50%;
+    padding: 10px;
+}
+.NewAccount .View input[type="checkbox"],.DetailsEditor input[type="checkbox"]{
+    width:20px;
+}
+.NewAccount .View .Container, .DetailsEditor .Container{
+    margin-bottom:10px;
+    display:flex;
+    flex-wrap:wrap;
+}
+.NewAccount .View .Buttons{
+    margin-top:20px;
+}
+
+span.Comment {
+    font-size: 50%;
+    padding-top: 5px;
+    display: inline-block;
+}
+span#ctl00_ContentPlaceHolder_AccountDetailsEditor_EmailValidator,
+.ValidationError {
+    font-size: 50%;
+    display:inline-block;
+    margin-right:5px;
+}
+
+.FindAddressButton {
+    margin: 10px 0;
+    order:2
+}
+
+.MyAccount .Buttons {
+    margin-top: 10px;
+}
+
+a.Selected {
+    color: #000;
+}
+
+@media(min-width:640px){
+	html{
+		font-size:16px; /* as the basis for all other font-sizes */
+	}
+}
+@media(min-width:720px){
+	html{
+		font-size:18px; /* as the basis for all other font-sizes */
+	}
+}
+@media(min-width:800px){
+	html{
+		font-size:20px; /* as the basis for all other font-sizes */
+	}
+}
+@media(min-width:880px){
+	html{
+		font-size:22px; /* as the basis for all other font-sizes */
+	}
+}
+@media(min-width:9600px){
+	html{
+		font-size:24px; /* as the basis for all other font-sizes */
+	}
+}
+@media(min-width:1040px){
+	html{
+		font-size:26px; /* as the basis for all other font-sizes */
+	}
+}
+@media(min-width:1120px){
+	html{
+		font-size:28px; /* as the basis for all other font-sizes */
+	}
+}
+@media(min-width:1200px){
+	html{
+		font-size:30px; /* as the basis for all other font-sizes */
+	}
+}
+@media(min-width:1280px){
+	html{
+		font-size:32px; /* as the basis for all other font-sizes */
+	}
+}
+
+
+
+
+@media screen and (max-width:1200px){
+    .PromoCode label.left {
+        flex-basis: 100%;
+        margin-bottom: 10px;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width:800px){
+
+    .Items .Item, .Items .Promo, .Items .Footer {
+        margin: 0 0 0 0;
+    }
+
+    ul.PromoItems {
+        padding: 10px;
+    }
+    .Items .Promo{
+        background-color:#00A2AE;
+        color: #FFF;
+        flex-basis: 100%;
+        margin: 0;
+        padding:30px;
+    }
+    
+    .PromoCode {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .PromoCode input {
+        margin:10px 15px;
+    }
+    .Items dt.Promo{
+        padding:30px;
+        min-height:unset;
+    }
+
+    ul.PromoItems {
+        padding: 10px;
+    }
+    
+    .SpektrixPage .Items dd {
+        margin-bottom: 35px;
+        max-width: 100%;
+        box-sizing: border-box;
+    }
+
+    .Item.Instance {
+        margin-bottom: 35px;
+    }
+    
+    .Items .Footer {
+        flex-basis: 100%;
+        padding: 15px 0;
+    }
+
+    .Buttons .CheckoutLink{
+        margin-bottom: 20px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .Item.Instance {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-device-width: 595px){
+
+    .SpektrixPage, body {
+        padding: 0 0.875rem;
+    }
+
+    .NewAccount label.left, .ChangePassword label.left, .DetailsEditor label.left,.LoginForm label.left {
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    .LoginForm input, .ChangePassword input{
+        width: 70%;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+    .NewAccount .View input, .DetailsEditor input {
+        width: 70%;
+        padding: 10px;
+    }
+}
