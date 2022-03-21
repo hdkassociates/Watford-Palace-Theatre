@@ -381,7 +381,7 @@ label.spx-label-field.spx-label-field__checkout.spx-label-field__checkout--perso
 }
 
 
-.spx-radio-button, .spx-input-checkbox {
+.spx-radio-button, .spx-input-checkbox:not(#UseCreditToPay) {
     display:none;
 }
 
@@ -786,8 +786,8 @@ a.Selected {
 
 /* Adding underline for account credit call to action */
 
-.spx-label-field__checkout--credit  {
+/* .spx-label-field__checkout--credit  {
     text-decoration: underline;
     cursor: pointer;
-}
+} */
 
